@@ -1,0 +1,35 @@
+package org.csu.myjpetstore.persistence;
+
+import java.util.List;
+
+import org.csu.myjpetstore.domain.Account;
+import org.csu.myjpetstore.domain.Order;
+
+public interface OrderDAO {
+	
+      List<Order> getOrdersByUsername(String username);
+      String getOrderByUsernameString = "SELECT * FROM orders WHERE userid = ?";
+//			  "SELECT BILLADDR1 AS billAddress1,BILLADDR2 AS billAddress2,BILLCITY,BILLCOUNTRY,"
+//      		+ "BILLSTATE,BILLTOFIRSTNAME,BILLTOLASTNAME,BILLZIP,SHIPADDR1 AS shipAddress1,SHIPADDR2 AS shipAddress2,"
+//      		+ "SHIPCITY,SHIPCOUNTRY,SHIPSTATE,SHIPTOFIRSTNAME,SHIPTOLASTNAME,SHIPZIP,CARDTYPE,COURIER,CREDITCARD,"
+//      		+ "EXPRDATE AS expiryDate,LOCALE,ORDERDATE,ORDERS.ORDERID,TOTALPRICE,USERID AS username,STATUS FROM ORDERS, "
+//      		+ "ORDERSTATUS WHERE ORDERS.USERID = ? AND ORDERS.ORDERID = ORDERSTATUS.ORDERID ORDER BY ORDERDATE";
+      
+	  Order getOrder(int orderId);
+	  String getOrderString = " select BILLADDR1 AS billAddress1,BILLADDR2 AS billAddress2,BILLCITY,BILLCOUNTRY,"
+	  		+ "BILLSTATE,BILLTOFIRSTNAME,BILLTOLASTNAME,BILLZIP,SHIPADDR1 AS shipAddress1,SHIPADDR2 AS shipAddress2,"
+	  		+ "SHIPCITY,SHIPCOUNTRY,SHIPSTATE,SHIPTOFIRSTNAME,SHIPTOLASTNAME,SHIPZIP,CARDTYPE,COURIER,CREDITCARD,"
+	  		+ "EXPRDATE AS expiryDate,LOCALE,ORDERDATE,ORDERS.ORDERID,TOTALPRICE,USERID AS username,STATUSFROM ORDERS, "
+	  		+ "ORDERSTATUS WHERE ORDERS.ORDERID = ? AND ORDERS.ORDERID = ORDERSTATUS.ORDERID";
+
+//	  orders.orderid = orderstatus.orderid.
+	  
+	  void insertOrder(Order order);
+	  String insertOrderString = "INSERT INTO ORDERS (ORDERID, USERID, ORDERDATE, SHIPADDR1, SHIPADDR2, SHIPCITY, SHIPSTATE,"
+	  		+ "SHIPZIP, SHIPCOUNTRY, BILLADDR1, BILLADDR2, BILLCITY, BILLSTATE, BILLZIP, BILLCOUNTRY,COURIER, TOTALPRICE,"
+	  		+ " BILLTOFIRSTNAME, BILLTOLASTNAME, SHIPTOFIRSTNAME, SHIPTOLASTNAME,CREDITCARD, EXPRDATE, CARDTYPE, "
+	  		+ "LOCALE) VALUES(?, ?, ?, ?,?,?,?,?, ?, ?, ?, ?,?, ?, ?,?,?, ?, ?,?, ?, ?, ?, ?,?)";
+	  
+	  void insertOrderStatus(Order order);
+	  String insertOrderStatusString = "INSERT INTO ORDERSTATUS (ORDERID, LINENUM, TIMESTAMP, STATUS) VALUES (?,?,?,?)";
+}

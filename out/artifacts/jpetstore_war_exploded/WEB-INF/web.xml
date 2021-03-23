@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+  <servlet>
+    <servlet-name>CheckCodeServlet</servlet-name>
+    <servlet-class>org.csu.myjpetstore.web.account.CheckCodeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>OrderServlet</servlet-name>
+    <servlet-class>org.csu.myjpetstore.web.account.OrderServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>NewAccountActionServlet</servlet-name>
+    <servlet-class>org.csu.myjpetstore.web.account.NewAccountActionServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>MainServlet</servlet-name>
+    <servlet-class>org.csu.myjpetstore.web.MainServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CategoryViewServlet</servlet-name>
+    <servlet-class>org.csu.myjpetstore.web.CategoryViewServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ProductViewServlet</servlet-name>
+    <servlet-class>org.csu.myjpetstore.web.ProductViewServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ItemViewServlet</servlet-name>
+    <servlet-class>org.csu.myjpetstore.web.ItemViewServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SearchProductServlet</servlet-name>
+    <servlet-class>org.csu.myjpetstore.web.SearchProductServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>NewAccountFormServlet</servlet-name>
+    <servlet-class>org.csu.myjpetstore.web.account.NewAccountFormServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SignonFormServlet</servlet-name>
+    <servlet-class>org.csu.myjpetstore.web.account.SignonFormServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SignonActionServlet</servlet-name>
+    <servlet-class>org.csu.myjpetstore.web.account.SignonActionServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SignoutActionServlet</servlet-name>
+    <servlet-class>org.csu.myjpetstore.web.account.SignoutActionServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>EditAccountFormServlet</servlet-name>
+    <servlet-class>org.csu.myjpetstore.web.account.EditAccountFormServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CartViewServlet</servlet-name>
+    <servlet-class>org.csu.myjpetstore.web.cart.CartViewServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RemoveActionServlet</servlet-name>
+    <servlet-class>org.csu.myjpetstore.web.cart.RemoveActionServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CheckoutActionServlet</servlet-name>
+    <servlet-class>org.csu.myjpetstore.web.cart.CheckoutActionServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CartIconServlet</servlet-name>
+    <servlet-class>org.csu.myjpetstore.web.cart.CartIconServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ContitueActionServlet</servlet-name>
+    <servlet-class>org.csu.myjpetstore.web.order.ContitueActionServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ConfirmOrderActionServlet</servlet-name>
+    <servlet-class>org.csu.myjpetstore.web.order.ConfirmOrderActionServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ConfirmShipAddressServlet</servlet-name>
+    <servlet-class>org.csu.myjpetstore.web.order.ConfirmShipAddressServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ActiveServlet</servlet-name>
+    <servlet-class>org.csu.myjpetstore.web.account.ActiveServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>RecodeServlet</servlet-name>
+    <servlet-class>org.csu.myjpetstore.web.account.RecodeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>RecodeRemoveServlet</servlet-name>
+    <servlet-class>org.csu.myjpetstore.web.recode.RecodeRemoveServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>usernameIsExistServlet</servlet-name>
+    <servlet-class>org.csu.myjpetstore.web.account.usernameIsExistServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FindResultServlet</servlet-name>
+    <servlet-class>org.csu.myjpetstore.web.FindResultServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CategoryShowJsServlet</servlet-name>
+    <servlet-class>org.csu.myjpetstore.web.CategoryShowJsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UpdateCart</servlet-name>
+    <servlet-class>org.csu.myjpetstore.web.cart.UpdateCartActionServlet</servlet-class>
+  </servlet>
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>UpdateCart</servlet-name>
+    <url-pattern>/UpdateCart</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CategoryShowJsServlet</servlet-name>
+    <url-pattern>/categoryShowJsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FindResultServlet</servlet-name>
+    <url-pattern>/findResultServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>usernameIsExistServlet</servlet-name>
+    <url-pattern>/usernameIsExistServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CheckCodeServlet</servlet-name>
+    <url-pattern>/checkCodeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>NewAccountActionServlet</servlet-name>
+    <url-pattern>/NewAccountActionServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MainServlet</servlet-name>
+    <url-pattern>/main</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CategoryViewServlet</servlet-name>
+    <url-pattern>/CategoryView</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ProductViewServlet</servlet-name>
+    <url-pattern>/ProductView</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ItemViewServlet</servlet-name>
+    <url-pattern>/ItemView</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SearchProductServlet</servlet-name>
+    <url-pattern>/SearchProduct</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>NewAccountFormServlet</servlet-name>
+    <url-pattern>/NewAccountForm</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SignonFormServlet</servlet-name>
+    <url-pattern>/SignonForm</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SignonActionServlet</servlet-name>
+    <url-pattern>/SignonAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SignoutActionServlet</servlet-name>
+    <url-pattern>/SignoutAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>EditAccountFormServlet</servlet-name>
+    <url-pattern>/EditAccountForm</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CartViewServlet</servlet-name>
+    <url-pattern>/CartView</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RecodeRemoveServlet</servlet-name>
+    <url-pattern>/RecodeRemove</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>RemoveActionServlet</servlet-name>
+    <url-pattern>/RemoveAction</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>CheckoutActionServlet</servlet-name>
+    <url-pattern>/CheckoutAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CartIconServlet</servlet-name>
+    <url-pattern>/CartIcon</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ContitueActionServlet</servlet-name>
+    <url-pattern>/ContitueAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ConfirmOrderActionServlet</servlet-name>
+    <url-pattern>/ConfirmOrderAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ConfirmShipAddressServlet</servlet-name>
+    <url-pattern>/ConfirmShipAddress</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrderServlet</servlet-name>
+    <url-pattern>/Order</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ActiveServlet</servlet-name>
+    <url-pattern>/ActiveServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RecodeServlet</servlet-name>
+    <url-pattern>/Recode</url-pattern>
+  </servlet-mapping>
+
+</web-app>
